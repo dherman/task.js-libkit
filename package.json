@@ -1,6 +1,6 @@
 {
-  "name": "thing",
-  "namespace": "thing",
+  "name": "task",
+  "namespace": "task",
   "version": "0.0.1",
   "description": "",
   "main": "dist/commonjs/main.js",
