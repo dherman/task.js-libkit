@@ -38,14 +38,20 @@ module.exports = {
   amdNodeTests: {
     src: [
       'vendor/loader.js',
-      'vendor/deps/rsvp-3.0.3.amd.js',
-      'dist/thing.amd.js',
-      'tmp/tests.amd.js',
+      'vendor/rsvp/rsvp.amd.js',
+      'dist/<%= pkg.name %>.amd.js',
+      'tmp/tests/amd/**/*.js',
     ],
     dest: 'tmp/tests.node.js',
     options: {
       banner: 'var assert = require("../test/vendor/assert");',
       footer: '\n;Object.keys(require.entries).filter(function(file) { return /_test$/.test(file); }).map(require);'
     }
+  },
+  amdTests: {
+    src: [
+      'tmp/tests/amd/**/*.js',
+    ],
+    dest: 'tmp/tests.amd.js'
   }
 };
