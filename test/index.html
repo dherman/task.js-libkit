@@ -7,8 +7,7 @@
 <body>
   <div id='mocha'></div>
   <script src='../vendor/loader.js'></script>
-  <script src="../vendor/deps/rsvp-3.0.3.amd.js"></script>
-  <script src='../dist/thing.amd.js'></script>
+  <script src="../vendor/rsvp/rsvp.amd.js"></script>
   <script src='../dist/task.amd.js'></script>
   <script src='vendor/assert.js'></script>
   <script src='vendor/mocha.js'></script>
@@ -20,9 +19,7 @@
     mocha.globals(['setTimeout']);
   </script>
   <script src='../tmp/tests.amd.js'></script>
-  <script src='../tmp/task.amd.js'></script>
   <script>
-
     Object.keys(require.entries).filter(function(file) {
       return /_test$/.test(file);
     }).map(require);
