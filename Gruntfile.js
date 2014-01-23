@@ -29,8 +29,8 @@ module.exports = function(grunt) {
   this.registerTask('tests', 'Builds the test package', [
     'concat:deps',
     'browserify:tests',
+    'regenerator',
     'transpile:testsAmd',
-    'transpile:testsCommonjs',
     'concat:amdNodeTests', // yet another hack to get es6 transpiled tests
     'concat:amdTests'      // yet another hack to get es6 transpiled tests
   ]);

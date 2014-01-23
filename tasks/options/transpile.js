@@ -45,20 +45,8 @@ module.exports = {
     src: [
       'test/test_helpers.js',
       'test/tests.js',
-      'test/**/*_test.js'
+      'tmp/regenerator/**/*_test.js'
     ],
     dest: 'tmp/tests/amd'
-  },
-
-  testsCommonjs: {
-    moduleName: nameFor,
-    type: 'cjs',
-    expand: true,
-    src: [
-      'test/test_helpers.js',
-      'test/tests.js',
-      'test/**/*_test.js'
-    ],
-    dest: 'tmp/tests/cjs'
   }
 };
