@@ -27,7 +27,8 @@
     "mocha-phantomjs": "~3.1.6",
     "connect-redirection": "0.0.1",
     "grunt-contrib-yuidoc": "~0.5.0",
-    "grunt-release-it": "0.0.3"
+    "grunt-release-it": "0.0.3",
+    "grunt-regenerator": "~0.2.1"
   },
   "scripts": {
     "test": "grunt test",
